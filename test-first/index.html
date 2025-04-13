@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/styles/reset.css">
+    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="src/styles/global.css">
+    <link rel="stylesheet" href="src/styles/stylesheet.css">
+    <link rel="stylesheet" href="src/styles/media.css">
+    <script src="src/js/app.js" defer></script>
+    <script src="src/js/burger.js" defer ></script>
+</head>
+<body >
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__text-content">
+                        <div class="header__top-section">
+                                <a class="burger-icon">
+                                    <svg width="25" height="25" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="2" y="3" width="21" height="2" rx="1" fill="white" />
+                                        <rect x="2" y="7" width="16" height="2" rx="1" fill="white" />
+                                        <rect x="2" y="11" width="21" height="2" rx="1" fill="white" />
+                                        <rect x="2" y="15" width="16" height="2" rx="1" fill="white" />
+                                    </svg>
+                                </a>
+                            <a href="/">
+                                <span class="logo">
+                                    Nova
+                                </span>
+                            </a>
+                            <nav class="nav">
+                                <ul class="nav__list">
+                                    <li class="esc">
+                                        <a class="esc__burger" href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path d="M6 18L18 6M6 6L18 18" stroke="currentColor" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a href="#" class="nav__link">TECHNOLOGY</a>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a href="#" class="nav__link">SOLUTIONS</a>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a href="#" class="nav__link">ELEVATE THE FUTURE
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="header__text-section">
+                            <h1 class="header__title">
+                                Affordable housing for families
+                            </h1>
+                            <p class="header_sub">
+                                start a new life
+                            </p>
+                            <ul class="header__list">
+                                <li class="header__item">
+                                    <img src="src/img/check-icon.svg" alt="">
+                                    <p class="header__text">up to <span class="header__metrics">$10 000</span>for the
+                                        first installment</p>
+                                </li>
+                                <li class="header__item">
+                                    <img src="src/img/check-icon.svg" alt="">
+                                    <p class="header__text"><span class="header__metrics">30%</span>discount for
+                                        families
+                                    </p>
+                                </li>
+                                    <li class="header__item">
+                                        <img src="src/img/check-icon.svg" alt="">
+                                        <p class="header__text">only<span class="header__metrics">17%</span>of applications
+                                            are rejected</p>
+                                    </li>
+                            </ul>
+                            <a href="#" class="button header__button">order</a>
+                        </div>
+                    </div>
+                    <div class="header__image">
+                        <img src="src/img/header-img.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="info">
+                <div class="container">
+                    <div class="info__inner">
+                        <div class="info__first-img">
+                            <img src="src/img/info-first.jpg" alt="">
+                        </div>
+                        <div class="info__text-info">
+                            <ul class="info__list">
+                                <li class="info__item">
+                                    <img src="src/img/icon-main.svg" alt="">
+                                    <h2>Find your dream home today – luxury, comfort, and prime locations await!</h2>
+                                </li>
+                                <li class="info__item">
+                                    <img src="src/img/icon-main.svg" alt="">
+                                    Invest in real estate for secure profits, steady passive income, and long-term
+                                    financial growth that builds wealth over time.
+                                </li>
+                                <li class="info__item">
+                                    <img src="src/img/icon-main.svg" alt="">
+                                    Modern apartments with stunning views – perfect for living or renting.
+                                </li>
+                                <li class="info__item">
+                                    <img src="src/img/icon-main.svg" alt="">
+                                    Expert agents help you buy, sell, and rent properties effortlessly.
+                                </li>
+                            </ul>
+                            <a href="#" class="button info__button">order</a>
+                        </div>
+                        <div class="info__second-img">
+                            <img src="src/img/info-sec.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contact">
+                <div class="container">
+                    <div class="contact__inner">
+                        <div class="contact__block">
+                            <div class="contact__input-block">
+                                <h2 class="contact__title">
+                                    Leave your request
+                                </h2>
+                                <form action="/submit-form" class="contact__form">
+                                    <input class="contact__name" type="text" placeholder="Name" required>
+                                    <input class="contact__mail" type="email" placeholder="E-mail" required>
+                                </form>
+                                <div class="contact__block-f-check">
+                                    <input class="contact__checkbox" type="checkbox" required>
+                                    <span class="contact__privacy">I accept Privacy policy</span>
+                                </div>
+                                <a href="#" class="contact__button">Submit Form</a>
+                            </div>
+                            <img class="contact__build-img" src="src/img/form-build.png" alt="">
+                            <img class="contact__women-img" src="src/img/women.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__nav">
+                        <ul class="footer__nav-list">
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link">TECHNOLOGY</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link">SOLUTIONS</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#" class="footer__nav-link">ELEVATE THE FUTURE</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__contacts">
+                        <div class="footer__first-column">
+                            <a href="/">
+                                <span class="logo">
+                                    Nova
+                                </span>
+                            </a>
+                            <span class="footer__back">© 2024, Copyright.</span>
+                        </div>
+                        <div class="footer__second-column">
+                            <div class="footer__socials">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_65_1272)">
+                                            <path
+                                                d="M21.332 5.33203H10.6654C7.71985 5.33203 5.33203 7.71985 5.33203 10.6654V21.332C5.33203 24.2775 7.71985 26.6654 10.6654 26.6654H21.332C24.2775 26.6654 26.6654 24.2775 26.6654 21.332V10.6654C26.6654 7.71985 24.2775 5.33203 21.332 5.33203Z"
+                                                stroke="#D5C9BE" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M16 20C18.2091 20 20 18.2091 20 16C20 13.7909 18.2091 12 16 12C13.7909 12 12 13.7909 12 16C12 18.2091 13.7909 20 16 20Z"
+                                                stroke="#D5C9BE" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M22 10V10.001" stroke="#D5C9BE" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_65_1272">
+                                                <rect width="32" height="32" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_65_1273)">
+                                            <path
+                                                d="M12.0013 15.9987C10.9465 15.9987 9.91533 16.3115 9.03826 16.8975C8.1612 17.4836 7.47761 18.3165 7.07395 19.2911C6.67028 20.2656 6.56466 21.3379 6.77045 22.3725C6.97624 23.4071 7.48419 24.3574 8.23007 25.1033C8.97595 25.8491 9.92626 26.3571 10.9608 26.5629C11.9954 26.7687 13.0677 26.6631 14.0423 26.2594C15.0168 25.8557 15.8498 25.1721 16.4358 24.2951C17.0218 23.418 17.3346 22.3869 17.3346 21.332V5.33203C17.3346 7.10014 18.037 8.79583 19.2873 10.0461C20.5375 11.2963 22.2332 11.9987 24.0013 11.9987"
+                                                stroke="#D5C9BE" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_65_1273">
+                                                <rect width="32" height="32" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_65_1274)">
+                                            <path
+                                                d="M23.9987 5.33203H7.9987C6.52594 5.33203 5.33203 6.52594 5.33203 7.9987V23.9987C5.33203 25.4715 6.52594 26.6654 7.9987 26.6654H23.9987C25.4715 26.6654 26.6654 25.4715 26.6654 23.9987V7.9987C26.6654 6.52594 25.4715 5.33203 23.9987 5.33203Z"
+                                                stroke="#D5C9BE" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M10.668 14.668V21.3346" stroke="#D5C9BE" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M10.668 10.668V10.6813" stroke="#D5C9BE" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M16 21.3346V14.668" stroke="#D5C9BE" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M21.3333 21.3346V17.3346C21.3333 16.6274 21.0524 15.9491 20.5523 15.449C20.0522 14.9489 19.3739 14.668 18.6667 14.668C17.9594 14.668 17.2811 14.9489 16.781 15.449C16.281 15.9491 16 16.6274 16 17.3346"
+                                                stroke="#D5C9BE" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_65_1274">
+                                                <rect width="32" height="32" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_65_1275)">
+                                            <path
+                                                d="M9.33203 13.3333V18.6667H13.332V28H18.6654V18.6667H22.6654L23.9987 13.3333H18.6654V10.6667C18.6654 10.313 18.8058 9.97391 19.0559 9.72386C19.3059 9.47381 19.6451 9.33333 19.9987 9.33333H23.9987V4H19.9987C18.2306 4 16.5349 4.70238 15.2847 5.95262C14.0344 7.20286 13.332 8.89856 13.332 10.6667V13.3333H9.33203Z"
+                                                stroke="#D5C9BE" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_65_1275">
+                                                <rect width="32" height="32" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_65_1276)">
+                                            <path
+                                                d="M20 13.332L14.6667 18.6654L22.6667 26.6654L28 5.33203L4 14.6654L9.33333 17.332L12 25.332L16 19.9987"
+                                                stroke="#D5C9BE" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_65_1276">
+                                                <rect width="32" height="32" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_65_1277)">
+                                            <path
+                                                d="M22.6667 6.66797H9.33333C6.38781 6.66797 4 9.05578 4 12.0013V20.0013C4 22.9468 6.38781 25.3346 9.33333 25.3346H22.6667C25.6122 25.3346 28 22.9468 28 20.0013V12.0013C28 9.05578 25.6122 6.66797 22.6667 6.66797Z"
+                                                stroke="#D5C9BE" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M13.332 12L19.9987 16L13.332 20V12Z" stroke="#D5C9BE" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_65_1277">
+                                                <rect width="32" height="32" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                            </div>
+                            <span class="footer__back">Privacy policy</span>
+                        </div>
+                        <div class="footer__third-column">
+                            <a href="#" class="button footer__button">order</a>
+                            <span class="footer__back">Terms of Use</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

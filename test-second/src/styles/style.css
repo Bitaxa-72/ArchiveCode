@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 5vw;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 150%;
+}
+
+.video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.div {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    inset: 0;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    mix-blend-mode:multiply;
+}
+
+.sfe{
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    inset: 0;
+}
+
+.span1, .span2, .span3, .span4 {
+    display: inline-block;
+    background-color: white;
+}
+.span11, .span22, .span33, .span44 {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.span1{
+    width: 10em;
+    height: .7em;
+}
+
+.span2{
+    width: 8em;
+    height: .7em;
+}
+
+.span3{
+    width: 9em;
+    height: .7em;
+}
+
+.span4{
+    width: 13.5em;
+    height: .7em;
+}
+.span11{
+    width: 10em;
+    height: .7em;
+}
+
+.span22{
+    width: 8em;
+    height: .7em;
+}
+
+.span33{
+    width: 9em;
+    height: .7em;
+}
+
+.span44{
+    width: 13.5em;
+    height: .7em;
+}
