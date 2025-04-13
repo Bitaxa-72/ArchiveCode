@@ -1,0 +1,36 @@
+:root {
+    --main-text-color: #fff;
+    --font-prata-title: 'Prata';
+}
+
+html {
+    scroll-padding: 30vh;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--main-text-color);
+    background-color: #282829;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.container {
+    max-width: 1950px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
+}

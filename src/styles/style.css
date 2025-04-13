@@ -1,0 +1,15 @@
+.inner{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding-top: 15px;
+}
+.test {
+    width: 200px;
+    height: 200px;
+    border: 3px #222 solid;
+    border-radius: 20px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
