@@ -262,6 +262,9 @@
         margin: 50px 0 64px;
         font-size: 25px;
     }
+    .nav__link{
+        line-height: 1.1;
+    }
 }
 
 @media (max-width: 400px) {
