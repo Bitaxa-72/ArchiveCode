@@ -1,0 +1,121 @@
+
+if( function_exists('acf_add_options_page') ) {
+
+    acf_add_options_page(array(
+        'page_title'    => 'Theme General Settings',
+        'menu_title'    => 'Theme Settings',
+        'menu_slug'     => 'theme-general-settings',
+        'capability'    => 'edit_posts',
+        'redirect'      => false
+    ));
+
+    acf_add_options_sub_page(array(
+        'page_title'    => 'Theme Header Settings',
+        'menu_title'    => 'Header',
+        'parent_slug'   => 'theme-general-settings',
+    ));
+
+    acf_add_options_sub_page(array(
+        'page_title'    => 'Theme Footer Settings',
+        'menu_title'    => 'Footer',
+        'parent_slug'   => 'theme-general-settings',
+    ));
+
+}
+
+
+ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ ИЛИ СКРИПТОВ ИЛИ ШРИФТОВ
+
+wp_enqueue_style( 'jsdelivr', 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css', array(), _S_VERSION );
+	wp_enqueue_style( 'animate', get_template_directory_uri() . '/lib/animate/animate.min.css', array(), _S_VERSION );
+
+Подключение полей
+
+В разделах опции:
+<?php echo get_field('header_adress', 'options')
+
+
+ПОДКЛЮЧЕНИЕ МЕНЮ
+
+<?php
+						wp_nav_menu(array(
+							'menu'            => '',              // (string) Название выводимого меню (указывается в админке при создании меню, приоритетнее
+							// чем указанное местоположение theme_location - если указано, то параметр theme_location игнорируется)
+							'container'       => 'div',           // (string) Контейнер меню. Обворачиватель ul. Указывается тег контейнера (по умолчанию в тег div)
+							'container_class' => '',              // (string) class контейнера (div тега)
+							'container_id'    => '',              // (string) id контейнера (div тега)
+							'menu_class'      => 'menu',          // (string) class самого меню (ul тега)
+							'menu_id'         => '',              // (string) id самого меню (ul тега)
+							'echo'            => true,            // (boolean) Выводить на экран или возвращать для обработки
+							'fallback_cb'     => 'wp_page_menu',  // (string) Используемая (резервная) функция, если меню не существует (не удалось получить)
+							'before'          => '',              // (string) Текст перед <a> каждой ссылки
+							'after'           => '',              // (string) Текст после </a> каждой ссылки
+							'link_before'     => '',              // (string) Текст перед анкором (текстом) ссылки
+							'link_after'      => '',              // (string) Текст после анкора (текста) ссылки
+							'depth'           => 0,               // (integer) Глубина вложенности (0 - неограничена, 2 - двухуровневое меню)
+							'walker'          => '',              // (object) Класс собирающий меню. Default: new Walker_Nav_Menu
+							'theme_location'  => 'header'               // (string) Расположение меню в шаблоне. (указывается ключ которым было зарегистрировано меню в функции register_nav_menus)
+						));
+						?>
+
+для функций
+
+register_nav_menus(array(
+		'header'    => 'Шапка',    //Название месторасположения меню в шаблоне
+		'footer' => 'Футер'      //Название другого месторасположения меню в шаблоне
+	));
+
+
+<?php 
+$map_code = get_field('map');
+if ($map_code) {
+    echo $map_code;
+}
+?>
+
+
+<?php echo get_field('header_logo')['url'] ?>
+<?php echo get_field('header_logo')['alt'] ?>
+
+<?php echo get_field('hero_background')?>
+<?php echo get_field('hero_background', 'options')?>
+
+<?php the_field('field') ?>
+<?php the_field('field', 'options') ?>
+
+<?php echo get_field('hero_btn')['url'] ?>
+<?php echo get_field('hero_btn')['title'] ?>
+
+
+<!-- ============================================= -->
+<?php
+if (have_rows('repeater_field_name')):
+while (have_rows('repeater_field_name')) : the_row(); ?>
+
+<?php the_sub_field('sub_field'); ?>
+
+<?php endwhile;
+else :
+endif;
+?>
+<!-- ============================================= -->
+<?php
+if (have_rows('repeater_field_name', 'options')):
+while (have_rows('repeater_field_name', 'options')) : the_row(); ?>
+
+<?php the_sub_field('sub_field', 'options'); ?>
+<?php endwhile;
+else :
+endif;
+?>
+<!-- ============================================= -->
+
+<?php echo get_sub_field('img')['url']; ?>
+
+
+
+<?php echo get_field('icon', 'options')?>
+
+<p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i><?php echo get_field('footer_adress', 'options')?></p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i><?php echo get_field('footer_tel', 'options')?></p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i><?php echo get_field('footer_email', 'options')?></p>

@@ -1,0 +1,23 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /account/
+Disallow: /search/
+Disallow: /?filter_*
+Disallow: /?sort=*
+Disallow: /*?*price=*
+Disallow: /*?*limit=*
+Disallow: /*?*mode=*
+Disallow: /compare/
+Disallow: /wishlist/
+Disallow: /customer/
+Disallow: /registration/
+Disallow: /login/
+
+Allow: /assets/
+Allow: /images/
+Allow: /css/
+Allow: /js/
+
+Sitemap: https://ваш-магазин.ru/sitemap.xml
